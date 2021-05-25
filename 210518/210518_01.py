@@ -40,17 +40,17 @@ print(dic)
 
 #미션- 일회용 패스워드 생성기를 이용하여서 3개의 패스워드를 생성하여 출력하는 프로그램을 작성해 보기
 
-from random import *
-alp = "abcdefghijklmnopqrstuvwxyz0123456789"
+# from random import *
+# alp = "abcdefghijklmnopqrstuvwxyz0123456789"
 
-def password():
-    pw = []
-    for i in range(5):
-        x = randint(1,len(alp))
-        pw.append(alp[x])    
-    return "".join(pw)
+# def password():
+#     pw = []
+#     for i in range(5):
+#         x = randint(1,len(alp))
+#         pw.append(alp[x])    
+#     return "".join(pw)
 
-print(password())
+# print(password())
 
 
 # import random
@@ -104,13 +104,9 @@ print(v1)
 
 # kwargs parameter
 #**kwargs처럼 매개변수 이름 앞에 **을 붙이면 매개변수 kwargs는 딕셔너리가 되고 모든 key=value 형태의 결괏값이 그 딕셔너리에 저장된다.
-def print_kwargs(**kwargs): # kwargs = keyword arguments의 약자
-    print(kwargs)
+def print_kwargs(**k): # kwargs = keyword arguments의 약자
+    print(k)
 
 
 print_kwargs(name='foo', age=3)
 
-
-
-import random
-print(random.randint(0,30))
