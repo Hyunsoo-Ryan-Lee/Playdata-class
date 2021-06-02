@@ -14,3 +14,9 @@ class Bookshelf:
     def setName(self,new_title):
         self.title = new_title
         return self.title 
+    
+    if __name__ == '__main__':
+        print('if __name__ == __main__')
+
+b1 = Bookshelf('음악과함께',200,'가나다','음악')
+print(b1)
